@@ -1,0 +1,6 @@
+{
+    "providers": [
+        {"type": "bitmap","file": "font/wumpus.png","ascent":16,"height": 16,"chars": ["abcd","efgh","ijk_","____"]},
+        {"type": "bitmap","file": "font/wumpus2.png","ascent":16,"height": 16,"chars": ["lmno","pqrs","tuv_","____"]}
+    ]
+}

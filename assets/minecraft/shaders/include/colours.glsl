@@ -1,5 +1,4 @@
-#define EFFECT vec3(112., 94., 48.) // #705e30
-#define CHROME vec3(112., 94., 80.) // #705e50
+#define NO_SHADOW vec3(76., 64., 22.) // #4C4016
 
 bool isColor(vec4 originColor, vec3 color) {
     return (originColor*255.).xyz == color;
@@ -9,8 +8,12 @@ vec4 getShadow(vec3 color) {
     return vec4(floor(color / 4.) / 255., 1);
 }
 
+vec4 getShadowAlt(vec3 color) {
+    return vec4(ceil(color / 4.) / 255., 1);
+}
+
 bool isShadow(vec4 originColor, vec3 color) {
-    return originColor.xyz == getShadow(color).xyz;
+    return round(originColor.xyz*255.) == round(getShadow(color).xyz*255.) || round(originColor.xyz*255.) == round(getShadowAlt(color).xyz*255.);
 }
 
 bool isEither(vec4 originColor, vec3 color) {

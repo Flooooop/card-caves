@@ -12,20 +12,15 @@ float rand(vec2 co){
 
 vec2 getCenter(sampler2D sampler, int id){
     vec2 shift = textureSize(sampler, 0)/2.;
-    switch(id){
-        case 0:
-            shift.y *= -1.;
-            return shift;
-            break;
-        case 1:
-            return shift;
-            break;
-        case 2:
-            shift.x *= -1.;
-            return shift;
-            break;
-        case 3:
-            return -shift;
-            break;
-    }
+
+    shift.x *= ((id >> 1) - 0.5) * -2;
+    shift.y *= (((id+1) >> 1 & 1) - 0.5 ) * 2;
+
+    return shift;
+}
+
+float smin( float a, float b, float k )
+{
+    float h = clamp( 0.5+0.5*(b-a)/k, 0.0, 1.0 );
+    return mix( b, a, h ) - k*h*(1.0-h);
 }

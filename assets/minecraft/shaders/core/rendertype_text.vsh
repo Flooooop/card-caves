@@ -35,9 +35,19 @@ void main() {
     vertexColor = Color * texelFetch(Sampler2, UV2 / 16, 0);
     texCoord0 = UV0;
 
+    int gui_scale = guiScale(ProjMat, ScreenSize);
+    int id = gl_VertexID%4;
+
     if (isShadow(Color, NO_SHADOW)) {vertexColor.a = 0;}
     if (isColor(Color, NO_SHADOW)) {vertexColor.rgb = vec3(1.,1.,1.);}
 
-    int gui_scale = guiScale(ProjMat, ScreenSize);
-    int id = gl_VertexID%4;
+    if (isEither(Color, SELECTED_CARD)) {
+        gl_Position.z -= 0.1;
+        gl_Position.y += 16.*gui_scale/ScreenSize.y;
+        if (isColor(Color, SELECTED_CARD)) {
+            vertexColor.rgb = vec3(1.,1.,1.);
+        } else {
+            vertexColor.rgb = vec3(0.247,0.247,0.247);
+        }
+    }
 }

@@ -1,0 +1,7 @@
+{
+    "providers": [
+        {"type": "bitmap","file": "card/backside.png","ascent":24,"height": 64,"chars": ["a"]},
+        {"type": "bitmap","file": "card/template_monster.png","ascent":24,"height": 64,"chars": ["b"]},
+        {"type": "bitmap","file": "card/wumpus.png","ascent":24,"height": 64,"chars": ["c"]}
+    ]
+}

@@ -19,4 +19,4 @@ jobs:
           # the PackSquash version your workflows use when a release occurs
           packsquash_version: latest
           options: |
-            pack_directory = 'pack'
+            pack_directory = '.'

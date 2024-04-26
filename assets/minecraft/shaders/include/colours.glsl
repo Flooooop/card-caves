@@ -1,5 +1,7 @@
 #define NO_SHADOW vec3(76., 64., 22.) // #4C4016
+
 #define SELECTED_CARD vec3(138., 121., 63.) // #8A793F
+#define BIG_CARD vec3(138., 121., 67.) // #8A7943
 
 bool isColor(vec4 originColor, vec3 color) {
     return (originColor*255.).xyz == color;

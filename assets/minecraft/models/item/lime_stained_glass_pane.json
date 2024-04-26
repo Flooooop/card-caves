@@ -1,0 +1,47 @@
+{
+	"parent": "item/generated",
+	"textures": {
+		"layer0": "minecraft:block/lime_stained_glass"
+	},
+	"overrides": [
+		{
+			"predicate": {
+				"custom_model_data": 1
+			},
+			"model": "item/animated_java_empty"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 2
+			},
+			"model": "animated_java:item/conglooberate/crown"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 3
+			},
+			"model": "animated_java:item/conglooberate/root"
+		},
+		{
+			"predicate": {
+				"custom_model_data": 4
+			},
+			"model": "animated_java:item/gloob/root"
+		}
+	],
+	"animated_java": {
+		"rigs": {
+			"conglooberate": {
+				"used_ids": [
+					2,
+					3
+				]
+			},
+			"gloob": {
+				"used_ids": [
+					4
+				]
+			}
+		}
+	}
+}

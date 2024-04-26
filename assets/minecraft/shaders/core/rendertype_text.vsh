@@ -50,4 +50,14 @@ void main() {
             vertexColor.rgb = vec3(0.247,0.247,0.247);
         }
     }
+
+    if (isEither(Color, BIG_CARD)) {
+        gl_Position.x -= normalize(vec2(getCenter(Sampler0, id).x,0)).x*23.5*gui_scale/ScreenSize.x;
+        gl_Position.y -= (normalize(vec2(getCenter(Sampler0, id).y,0)).x*31.5-31)*gui_scale/ScreenSize.y;
+        if (isColor(Color, BIG_CARD)) {
+            vertexColor.rgb = vec3(1.,1.,1.);
+        } else {
+            vertexColor.rgb = vec3(0.247,0.247,0.247);
+        }
+    }
 }

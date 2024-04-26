@@ -1,0 +1,36 @@
+{
+    "version": "0.4.8",
+    "projects": {
+        "7c9ddc90-c2a3-792a-9807-f7f111a8ab3d": {
+            "project_name": "wumpus",
+            "file_list": [
+                "assets\\animated_java\\models\\item\\wumpus\\leg_right.json",
+                "assets\\animated_java\\models\\item\\wumpus\\leg_left.json",
+                "assets\\animated_java\\models\\item\\wumpus\\arm_right.json",
+                "assets\\animated_java\\models\\item\\wumpus\\arm_left.json",
+                "assets\\animated_java\\models\\item\\wumpus\\body.json",
+                "assets\\animated_java\\models\\item\\wumpus\\leaf.json",
+                "assets\\animated_java\\models\\item\\wumpus\\head.json",
+                "assets\\animated_java\\textures\\item\\wumpus\\texture.png",
+                "assets\\minecraft\\models\\item\\animated_java_empty.json"
+            ]
+        },
+        "2b456650-a5cf-6272-8b0b-13cda402b1d3": {
+            "project_name": "gloob",
+            "file_list": [
+                "assets\\animated_java\\models\\item\\gloob\\root.json",
+                "assets\\animated_java\\textures\\item\\gloob\\texture.png",
+                "assets\\minecraft\\models\\item\\animated_java_empty.json"
+            ]
+        },
+        "111d5736-2980-d4b0-0d4f-41dffcd8b89f": {
+            "project_name": "conglooberate",
+            "file_list": [
+                "assets\\animated_java\\models\\item\\conglooberate\\crown.json",
+                "assets\\animated_java\\models\\item\\conglooberate\\root.json",
+                "assets\\animated_java\\textures\\item\\conglooberate\\texture.png",
+                "assets\\minecraft\\models\\item\\animated_java_empty.json"
+            ]
+        }
+    }
+}

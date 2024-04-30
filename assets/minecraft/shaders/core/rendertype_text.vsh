@@ -43,7 +43,8 @@ void main() {
 
     if (isEither(Color, SELECTED_CARD)) {
         gl_Position.z -= 0.1;
-        gl_Position.y += 16.*gui_scale/ScreenSize.y;
+        gl_Position.y += 16.*gui_scale/ScreenSize.y + sin(GameTimeSeconds * 3.) * (gui_scale/ScreenSize.y) * 4.;
+        gl_Position.x += cos(GameTimeSeconds * .8) * (gui_scale/ScreenSize.y) * 2.;
         if (isColor(Color, SELECTED_CARD)) {
             vertexColor.rgb = vec3(1.,1.,1.);
         } else {
